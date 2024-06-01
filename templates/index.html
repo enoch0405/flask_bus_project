@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Bus Information System</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="/">
+                    <h1>SimpleFree</h1>
+                </a>
+            </div>
+            <nav></nav>
+        </header>    
+
+        <div id="contents">
+            <div id="searchBus">
+                <input type="text" id="station" placeholder="정류장을 검색하세요">
+                <button type="button" id="searchButton">검색</button>
+            </div>
+            <div id="busInfo">
+                <div class="busResults"></div>
+            </div>
+            <div id="stationInfo">
+                <div class="searchResults"></div>
+            </div>
+        </div>
+
+        <footer></footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
